@@ -10,6 +10,7 @@ from analysis.suppress_low_counts import (
     read_issues,
     suppress_dictionary,
     suppress_issues,
+    suppress_low_counts,
     write_csv,
 )
 
@@ -72,6 +73,17 @@ def test_suppress_dictionary():
 def test_write_csv():
     write_csv(read_issues(), "medication_issues.csv")
     write_csv(read_dictionary(), "medication_dictionary.csv")
+    assert all(
+        [
+            os.path.exists(SUPPRESSED_OUTPUT_PATH + "medication_issues.csv"),
+            os.path.exists(SUPPRESSED_OUTPUT_PATH + "medication_dictionary.csv"),
+        ]
+    )
+    shutil.rmtree(SUPPRESSED_OUTPUT_PATH)
+
+
+def test_suppress_low_counts():
+    suppress_low_counts()
     assert all(
         [
             os.path.exists(SUPPRESSED_OUTPUT_PATH + "medication_issues.csv"),

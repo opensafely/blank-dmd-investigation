@@ -64,8 +64,8 @@ def suppress_low_counts():
 
     df_dictionary = read_dictionary()
     df_dictionary = suppress_dictionary(df_dictionary, allowed_multilex_ids)
-    write_csv(df_dictionary, "medication_dictionary,csv")
+    write_csv(df_dictionary, "medication_dictionary.csv")
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma: no cover
     suppress_low_counts()
