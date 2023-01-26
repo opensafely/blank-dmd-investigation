@@ -102,3 +102,7 @@ htmlcov
 venv/
 
 .pytest-cache/
+
+
+# opensafely outputs
+output/
