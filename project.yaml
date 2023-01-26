@@ -1,0 +1,32 @@
+version: "3.0"
+
+expectations:
+  population_size: 1000
+
+actions:
+  query_medication_issues:
+    run: >
+      sqlrunner:latest
+        --output output/medication_issues.csv
+        analysis/medication_issues.sql
+    outputs:
+      highly_sensitive:
+        rows: output/medication_issues.csv
+  query_medication_dictionary:
+    run: >
+      sqlrunner:latest
+        --output output/medication_dictionary.csv
+        analysis/medication_dictionary.sql
+    outputs:
+      highly_sensitive:
+        rows: output/medication_dictionary.csv
+  suppress_low_counts:
+    run: >
+      python:latest python analysis/suppress_low_counts.py
+    needs:
+      - query_medication_issues
+      - query_medication_dictionary
+    outputs:
+      moderately_sensitive:
+        issues: output/suppressed/medication_issues.csv
+        dictionary: output/suppressed/medication_dictionary.csv

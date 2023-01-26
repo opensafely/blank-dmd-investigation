@@ -1,0 +1,4 @@
+MultilexDrug_ID,ProductId,FullName,RootName,PackDescription,Form,Strength,CompanyName,DMD_ID
+1;1;0,10001,"Dummy product name here (may contain: brackets, and other special chars[%$£])", Dummy, Chunky, Bag, Very, ACME Medical Supplies, 12345678987654321234567890
+1;2;0,20001,"Fake product name here (may contain: brackets, and other special chars[%$£])", Fake, Chunky, Bag, Very, Initrode Medical Supplies, 9876543210123456789876543210
+1;3;0,30001,"Rare product name here (may contain: brackets, and other special chars[%$£])", Rare, Chunky, Bag, Very, Hooli Medical Supplies, surprise!
