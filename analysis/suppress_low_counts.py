@@ -3,7 +3,9 @@ import os
 
 import pandas as pd
 
+
 SUPPRESSED_OUTPUT_PATH = "output/suppressed/"
+
 
 def read_issues():
     return pd.read_csv(
@@ -43,7 +45,7 @@ def suppress_dictionary(df_dictionary, allowed_multilex_ids):
 
 def write_csv(df, filename):
     if not os.path.exists(SUPPRESSED_OUTPUT_PATH):
-        os.makedirs(SUPPRESSED_OUTPUT_PATH,exist_ok=True)
+        os.makedirs(SUPPRESSED_OUTPUT_PATH, exist_ok=True)
     path = SUPPRESSED_OUTPUT_PATH + filename
     df.to_csv(
         path,

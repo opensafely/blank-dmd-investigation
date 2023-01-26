@@ -1,15 +1,16 @@
 import os
-import pytest
 import shutil
+
 import pandas as pd
+import pytest
 
 from analysis.suppress_low_counts import (
-    read_issues,
-    read_dictionary,
-    suppress_issues,
-    suppress_dictionary,
-    write_csv,
     SUPPRESSED_OUTPUT_PATH,
+    read_dictionary,
+    read_issues,
+    suppress_dictionary,
+    suppress_issues,
+    write_csv,
 )
 
 
@@ -58,9 +59,14 @@ def test_suppress_dictionary():
     df_dictionary = read_dictionary()
     df_dictionary = suppress_dictionary(df_dictionary, allowed_multilex_ids)
 
-    assert len(
-        df_dictionary[df_dictionary.MultilexDrug_ID.isin(low_count_only_multilex_ids)]
-    ) ==0
+    assert (
+        len(
+            df_dictionary[
+                df_dictionary.MultilexDrug_ID.isin(low_count_only_multilex_ids)
+            ]
+        )
+        == 0
+    )
 
 
 def test_write_csv():
