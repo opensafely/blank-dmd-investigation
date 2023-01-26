@@ -8,4 +8,4 @@ SELECT
   Strength,
   CompanyName,
   DMD_ID
-FROM OpenCorona.dbo.MedicationDictionary
+FROM dbo.MedicationDictionary
