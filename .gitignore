@@ -104,5 +104,6 @@ venv/
 .pytest-cache/
 
 
-# opensafely outputs
+# opensafely-specific
 /output/
+/metadata/
