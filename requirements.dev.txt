@@ -471,9 +471,9 @@ oauthlib==3.2.2 \
     --hash=sha256:8139f29aac13e25d502680e9e19963e83f16838d48a0d71c287fe40e7067fbca \
     --hash=sha256:9859c40929662bec5d64f34d01c99e093149682a3f38915dc0655d5a633dd918
     # via requests-oauthlib
-opensafely==1.35.0 \
-    --hash=sha256:acd536ab76c90f16b63bac0910019c6afe95595f351dcb95e1e736c4489f5d67 \
-    --hash=sha256:c2af84e75601649196d8bca97750f7cd71a063345f5ac1fd4f3df8928197de51
+opensafely==1.35.1 \
+    --hash=sha256:029d16286b916b25f46c62f0cfb56b293c9443ec9a2d71de6b4b084212375397 \
+    --hash=sha256:946399098b4a06366f00ad3cfeb33f675f6245bdf5454ec8f0ed917dee5a0c6b
     # via -r requirements.dev.in
 packaging==23.0 \
     --hash=sha256:714ac14496c3e68c99c29b00845f7a2b85f3bb6f1078fd9f72fd20f0570002b2 \
