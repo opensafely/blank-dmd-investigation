@@ -4,8 +4,6 @@ This project produces low-number-suppressed counts of medication issues within O
 This is in support of an investigation into medication records with blank DM+D identifiers, which may be causing
 issues in other OpenSAFELY studies.
 
-# ${GITHUB_REPOSITORY_NAME}
-
 You can run this project via [Gitpod](https://gitpod.io) in a web browser by clicking on this badge: [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-908a85?logo=gitpod)](https://gitpod.io/#https://github.com/%252Fopensafely%252Fblank-dmd-investigation)
 
 [View on OpenSAFELY](https://jobs.opensafely.org/repo/https%253A%252F%252Fgithub.com%252Fopensafely%252Fblank-dmd-investigation)
