@@ -692,9 +692,9 @@ wheel==0.38.1 \
     --hash=sha256:7a95f9a8dc0924ef318bd55b616112c70903192f524d120acc614f59547a9e1f \
     --hash=sha256:ea041edf63f4ccba53ad6e035427997b3bb10ee88a4cd014ae82aeb9eea77bb9
     # via pip-tools
-xlsxwriter==3.1.2 \
-    --hash=sha256:331508ff39d610ecdaf979e458840bc1eab6e6a02cfd5d08f044f0f73636236f \
-    --hash=sha256:78751099a770273f1c98b8d6643351f68f98ae8e6acf9d09d37dc6798f8cd3de
+xlsxwriter==3.1.9 \
+    --hash=sha256:b61c1a0c786f82644936c0936ec96ee96cd3afb9440094232f7faef9b38689f0 \
+    --hash=sha256:de810bf328c6a4550f4ffd6b0b34972aeb7ffcf40f3d285a0413734f9b63a929
     # via -r requirements.dev.in
 
 # The following packages are considered to be unsafe in a requirements file:
