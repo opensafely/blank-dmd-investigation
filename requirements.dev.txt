@@ -489,6 +489,7 @@ packaging==23.0 \
     #   build
     #   db-dtypes
     #   google-cloud-bigquery
+    #   pandas-gbq
     #   pytest
 pandas==1.5.3 \
     --hash=sha256:14e45300521902689a81f3f41386dc86f19b8ba8dd5ac5a3c7010ef8d2932813 \
@@ -522,9 +523,9 @@ pandas==1.5.3 \
     #   -r requirements.dev.in
     #   db-dtypes
     #   pandas-gbq
-pandas-gbq==0.19.2 \
-    --hash=sha256:0ef8da3e4088053a2bea069ed688992a44b52af67dadb97eee494b32a2147563 \
-    --hash=sha256:b0f7fa84a2be0fe767e33a008ca7e4ad9a9e3ac67255fd0a41fc19b503138447
+pandas-gbq==0.20.0 \
+    --hash=sha256:5710fea855ce4118511f613018aff973dff121a8dc35bca21cc10262d66592eb \
+    --hash=sha256:b025d2b18abb167e48869fb905fe799009fc1cbdf2b71461d030b328a40bbea6
     # via -r requirements.dev.in
 pathspec==0.9.0 \
     --hash=sha256:7d15c4ddb0b5c802d161efc417ec1a2558ea2653c2e8ad9c19098201dc1c993a \
